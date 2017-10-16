@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <EditText
@@ -9,24 +13,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="To"
-        android:inputType="textPersonName" />
+        android:hint="@string/to"
+        android:inputType="textPersonName" /> <!--Ocupa(match_content) toda la aplicacion-->
     <EditText
         android:id="@+id/editText_Subject"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Subject"/>  <!--Ocupa(wrap_content lo necesario para mostrar su sontenido-->
+        android:hint="@string/subject"/>  <!--Ocupa(wrap_content lo necesario para mostrar su sontenido-->
     <EditText
         android:id="@+id/editText_Message"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:gravity="top"
-        android:hint="Message"/>
+        android:hint="@string/message"/>
     <Button
         android:id="@+id/button_Send"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Send"
-        android:layout_gravity="right"/>
+        android:layout_width="@dimen/btnAnchura"
+        android:layout_height="@dimen/btnAltura"
+        android:text="@string/send"
+        android:layout_gravity="right"
+        tools:ignore="RtlHardcoded" />
 </LinearLayout>
