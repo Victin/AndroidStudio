@@ -2,4 +2,6 @@
 <resources>
     <dimen name="btnAnchura">100dp</dimen>
     <dimen name="btnAltura">50dp</dimen>
+    <dimen name="txtLogin">50dp</dimen>
+    <dimen name="txtOlvidar">20dp</dimen>
 </resources>

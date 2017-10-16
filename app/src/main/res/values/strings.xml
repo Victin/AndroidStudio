@@ -12,4 +12,6 @@
     <string name="notas">Notas</string>
     <string name="telefono">Telefono</string>
     <string name="hola_mundo">Hola Mundo!</string>
+    <string name="aa_aa">aa:aa</string>
+    <string name="dd_mm_yyyy">dd/mm/yyyy</string>
 </resources>
