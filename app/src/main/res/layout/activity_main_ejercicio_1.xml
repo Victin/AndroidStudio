@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:paddingLeft="10dp"
     android:paddingRight="10dp"
@@ -11,58 +12,63 @@
         android:id="@+id/txvNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nombre"/>
+        android:text="@string/nombre"/>
 
     <EditText
         android:id="@+id/txtNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
+        android:inputType="" />
     <TextView
         android:id="@+id/txvApellidos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Apellidos"/>
+        android:text="@string/apellidos"/>
 
     <EditText
         android:id="@+id/txtApellidos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
+        android:inputType="" />
     <TextView
         android:id="@+id/txvTelefono"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Telefono"/>
+        android:text="@string/telefono"/>
     <EditText
         android:id="@+id/txtTelefono"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="+34"/>
+        android:hint="@string/_34"/>
     <TextView
         android:id="@+id/txvNotas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Notas"/>
+        android:text="@string/notas"/>
     <EditText
         android:id="@+id/txtNotas"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_gravity="top"/>
+        android:gravity="top"
+        android:inputType="" /> <!--Layout_gravity cambia segun el layout padre
+        Gravity cambia degun su objeto-->
    <LinearLayout
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
+       android:orientation="horizontal"
        android:layout_gravity="center">
         <Button
             android:id="@+id/btnGuardar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="GUARDAR"/>
+            android:text="@string/guardar"
+            tools:ignore="ButtonStyle" />
         <Button
             android:id="@+id/btnCancelar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CANCELAR"/>
+            android:text="@string/cancelar"
+            tools:ignore="ButtonStyle" />
    </LinearLayout>
 </LinearLayout>
